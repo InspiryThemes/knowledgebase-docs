@@ -1,0 +1,410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Theme Documentation</title>
+	
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">	
+	
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		ul li span { font: 14px "Courier New", Courier, monospace; color: #888; display: inline-block; float: right; text-align: right; }
+		.files li { overflow: hidden; border-bottom: 3px solid #fff; background-color: #f5f5f5; }
+		h4 { font-size: 16px; font-weight: bold; }
+		.tf-link-btn { display: block; margin: 5px auto; width: 300px; height: 51px; background: url(assets/images/theme-forest.png) left top no-repeat; }
+		.tf-link-btn:hover, .tf-link-btn:focus { background-position: bottom; }
+		ol.alpha li ul { padding-left: 25px; }
+		ol.alpha>li { margin-bottom: 0px; }
+		ol.alpha>li>ul>li { margin-bottom: 10px; }
+		ol.alpha li a { text-decoration: none;  color: #222; font-size: 16px; font-weight: bold; margin-bottom:10px; display:inline-block;  }
+		ol.alpha li ul li { list-style: decimal; }
+		ol.alpha li ul li a { font-size: 14px; font-weight: normal; color: #333; margin-bottom:0px; }
+		ol.alpha li ul li ul li a { font-size: 14px; font-weight: normal; color: #444; }
+		pre { color: #666; font: 14px "Courier New", Courier, monospace; }
+		.highlight{
+				text-align:center; 
+				padding:10px; 
+				background-color: #FF9; 
+				border:1px solid #6C0; 
+				margin:20px 0;
+			}
+		.important{
+				padding:10px; 
+				background-color: #FFC; 
+				border:1px solid #6C6; 
+				margin:20px 0;
+			}
+	</style>
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function(e) {
+
+			$ = jQuery;
+			
+			/*-----------------------------------------------------------------------------------*/
+			/*	Remove Width and Height Attribute of Images
+			 /*-----------------------------------------------------------------------------------*/
+			$('img').removeAttr("width height");
+						
+			
+		});
+	</script>
+	
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">Documentation by Inspiry Themes</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Knowledge Base Theme&rdquo;</h1>
+		
+		<div class="borderTop borderBottom clearfix">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>					
+					Updated: 04 March 2015<br>
+					Support: <a target="_blank" href="http://support.inspirythemes.com/">Support Site</a><br>
+					Theme By: <a href="http://themeforest.net/user/InspiryThemes/portfolio" target="_blank">Inspiry Themes</a>					
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing Knowledge Base Theme . If you have any questions that are beyond the scope of this help file, please feel free to create a support ticket at our <a href="http://support.inspirythemes.com/" target="_blank">support site</a>. Thanks!</p>				
+			</div>
+		</div><!-- end div .borderTop -->
+				
+		<div class="important">
+			<h4>How to Get Themeforest Item Purchase Code to Create a Support Ticket</h4>
+			<p>Please <a href="http://support.inspirythemes.com/knowledgebase/how-to-get-themeforest-item-purchase-code/" target="_blank">follow this guide</a> to learn about how to get item purchase code from themeforest to signup on our support site. </p>
+		</div>
+	
+		
+		<hr>
+		
+		<h3 id="toc" class="alt">Table of Contents</h3>
+		
+		<ol class="alpha">
+			<li><a href="#disclaimer">Disclaimer</a></li>
+			<li>
+				<a href="#getting-started">Getting Started</a>
+				<ul>
+					<li><a href="#theme-install">Theme Installation</a></li>
+					<li><a href="#quick-setup">Quick Setup</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="#theme-options">Other Theme Options</a>
+				<ul>
+					<li><a href="#search-area">Search Area Options</a></li>
+					<li><a href="#theme-styling"> Theme Styling ( Colors &amp; Background )</a></li>
+					<li><a href="#social-navigation">Social Navigation</a></li>
+					<li><a href="#footer-options">Footer</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#create-article">How to publish an Article</a>
+				<ul>
+					<li><a href="#standard-article">Standard Article</a></li>
+					<li><a href="#image-article">Article with Image Post Format</a></li>
+					<li><a href="#video-article">Article with Video Post Format</a></li>
+				</ul>
+			</li>
+			<li><a href="#faqs-settings">FAQs Settings</a>
+				<ul>										
+					<li><a href="#new-faqs">Create New FAQs Page</a></li>
+					<li><a href="#new-queston">Create new Question and Answer</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="#contact-settings">Contact Page Settings</a></li>
+			<li><a href="#theme-widgets">Theme Widgets</a></li>
+			<li><a href="#theme-short-codes">Theme Short Codes</a></li>
+			<li><a href="#bbpress-setup">How to Add a Forum with bbPress</a></li>
+			<li><a href="#theme-customization">Theme Customization</a></li>
+		</ol>									
+		<hr>
+		
+		<h2 id="disclaimer">1) Disclaimer - <a href="#toc">top</a></h2>
+		<p>We offer limited support for our themes. We only provide support for themes and their core features and functionality.  We cannot guarantee our themes will function with all third party plugins and server environments. If you plan on adding numerous plugins to this theme, please note we cannot facilitate support of any conflicts they might cause with the default functionality. The Knowledge Base WordPress theme is presented as it is.</p>		
+		<hr/>
+		
+		<h2 id="getting-started">2) Getting Started - <a href="#toc">top</a></h2>
+		<p>Welcome to Knowledge Base Theme Documentation. In start you must have a working version of WordPress already installed. For information in regard to installing the WordPress CMS, Please see the WordPress Codex&nbsp;<a href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a></p>
+		<hr/>	
+					
+		<h3 id="theme-install">2.1) Theme Installation - <a href="#toc">top</a></h2>
+			<div class="highlight"><strong>Please make sure to unzip the package that you downloaded from themeforest, Before uploading it to your WordPress installation as a theme.</strong> Because, it is not only a theme and contain many other related files &amp; folders like Documentation, Import XML, Theme Files and Theme Zip</div>
+			<p>When you are ready to install this theme, you must first upload the theme files and then activate the theme itself. The theme files can be uploaded in two ways:</p>
+			
+			<p><strong>FTP Upload:</strong>&nbsp;Using your FTP client, upload the non-zipped theme folder into the /wp-content/themes/ folder on your server.</p>
+			
+			<p style="text-align:center"><strong>OR</strong></p>
+			
+			<p><strong>WordPress Upload:</strong>&nbsp;Navigate to&nbsp;<strong>Appearance &gt; Themes &gt; Add New &gt; Upload Theme</strong>. Go to "Browse/Choose File", and select the zipped theme file named <strong>inspiry-knowledgebase.zip</strong>. Hit “Install Now” and the theme will be uploaded and installed.</p>
+			
+			<p>Once the theme is uploaded, you need to activate it. Go to <strong>Appearance &gt; Themes</strong> and activate the uploaded theme.</p>
+			
+			<p><strong>Note:</strong> The Theme zip name is <strong>inspiry-knowledgebase.zip</strong>. which you will find in the downloaded package from themeforest.</p>
+
+			<h4>Install Child Theme</h4>
+		<p>It is better to use child theme and if you need to modify anything you modify in child theme only. This way you can easily update your parent theme when new update becomes available on themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
+			<p>To install child theme for this theme, you need to upload the <strong>inspiry-knowledgebase-child.zip</strong> and activate it the same way you uploaded <strong>inspiry-knowledgebase.zip</strong> as guided above.</p>
+
+			<h4>Translating Theme to Your language</h4>
+			<p>If you want to translate the theme to your language then read the following article on our support site. <a href="http://support.inspirythemes.com/knowledgebase/how-to-translate-your-theme-to-your-language/" target="_blank">How to translate your theme to your language</a></p>
+			<hr/>
+				
+		<h3 id="quick-setup">2.2) Recommended Quick Setup - <a href="#toc">top</a></h2>
+			<p>
+				<strong>Step 1:</strong> <br/>
+				Go to <strong>Appearance >> Import Demo Data</strong> and press the <strong>"Import Demo Data"</strong> button and wait as it will take few minutes to import demo data and related images from remote server. <br/><br/>
+
+				<strong>Step 2:</strong> <br/>
+				After this, Go to <strong>Appearance >> Theme Options</strong> and simply save the theme options once. <br/><br/>
+
+				<strong>Step 3:</strong> <br/>
+				Visit your site. Your basic theme installation is complete. <br/><br/>
+			</p>
+
+		<hr/>
+
+		<h3 id="quick-setup">2.3) Manual Setup - <a href="#toc">top</a></h2>
+				
+			<h3>Step 1: - <a href="#toc">top</a></h3>
+				<p>Look for <strong>Import XML</strong> folder in unzipped package downloaded from themeforest.net and  use the XML within it.&nbsp;Go to the <strong>WordPress Admin &gt;&gt; Tools &gt;&gt; Import &gt;&gt; WordPress</strong>&nbsp;( at 1st time you need to install&nbsp;WordPress&nbsp;import plugin). After that, Import the XML file and be sure to include everything, including attachments. After that’s done, you will have a bunch of posts, pages and other related contents.</p>
+				<hr/>
+			<h3>Step 2: - <a href="#toc">top</a></h3>
+				<p>Go to <strong>Appearance &gt;&gt; Menus</strong>. You will find three&nbsp;menus&nbsp;already created. Arrange and Assign them as displayed in image below.</p>
+				<p><img alt="menu" src="assets/el/menu.png" ></p>
+				<hr/>
+			<h3>Step 3: - <a href="#toc">top</a></h3>
+				<p>Go to&nbsp;<strong>Settings &gt;&gt; Reading&nbsp;</strong>and assign&nbsp;<strong>Home</strong> page as Front Page and&nbsp;<strong>Articles List</strong> page as posts page. As displayed in image below.</p>
+				<p><img alt="home blog" src="assets/el/home-blog.png" ></p>
+				<hr/>
+			<h3>Step 4: - <a href="#toc">top</a></h3>
+				<p>Go to <b>Appearance &gt;&gt; Theme Options &gt;&gt; Header</b> and upload your logo and favicon as displayed in image below.</p>
+				<p><img alt="theme-options" src="assets/el/theme-options.png" ></p>
+				<hr/>
+			<h3>Step 5: - <a href="#toc">top</a></h3>
+				<p>Go to&nbsp;<b>Appearance &gt;&gt; Theme Options &gt;&gt; Home&nbsp;</b>and configure the settings as displayed in image below.</p>
+				<p><img alt="to-home" src="assets/el/to-home.png" ></a></p>
+				<hr/>
+			<h3>Step 6: - <a href="#toc">top</a></h3>
+				<p>Go to&nbsp;<b>Appearance &gt;&gt; Widgets&nbsp;</b>and configure widgets in Home Sidebar as displayed in following screenshot.</p>
+				<p><img alt="to-home" src="assets/el/home-widgets.png" ></a></p>
+				<p><strong>Your Home Page’s basic settings are done now. you can further customize things according to your requirements.</strong></p>
+				<hr/>
+		
+		
+		<h2 id="theme-options">3) Other Theme Options - <a href="#toc">top</a></h2>
+			<p>This theme comes with extensive theme options and few sections of theme options are already displayed in Quick Setup and Few will be displayed with related documentation sections. Remaining sections are listed here for your understanding.</p>
+			<h3 id="search-area">3.1) Search Area Options - <a href="#toc">top</a></h3>
+				<p>Go to&nbsp;<b>Appearance &gt;&gt; Theme Options &gt;&gt; Search Area&nbsp;</b>and modify the Search area title and text below title as displayed in screenshot below.</p>
+				<p><img alt="" src="assets/el/search-area.png" ></p>
+			
+			<h3 id="theme-styling">3.2) Theme Styling ( Colors &amp; Background )</h3>
+				<p>Go to&nbsp;<b>Appearance &gt;&gt; Theme Options &gt;&gt; Styling&nbsp;</b>and modify the settings to your needs as displayed in image below.</p>
+				<p><img alt="" src="assets/el/styling.png" ></p>
+			
+			<h3 id="social-navigation">3.3) Social Navigation - <a href="#toc">top</a></h3>
+				<p>Go to&nbsp;<b>Appearance &gt;&gt; Theme Options &gt;&gt; Social Navigation&nbsp;</b>and and provide the links for social services that you want to use.</p>
+				<p><img alt="" src="assets/el/social-nav.png" ></p>
+			
+			<h3 id="footer-options">3.4) Footer - <a href="#toc">top</a></h3>
+				<p>Go to&nbsp;<b>Appearance &gt;&gt; Theme Options &gt;&gt; Footer&nbsp;</b>and modify Copyright text to your needs.</p>
+				<p><img alt="" src="assets/el/footer-options.png" ></p>
+				
+
+		<h2 id="create-article">4) How to publish an Article - <a href="#toc">top</a></h2>				
+				
+				<h3 id="standard-article">4.1) Standard Article - <a href="#toc">top</a></h3>
+				<p>Go to <strong>Posts &gt;&gt; Add New</strong> and specify title of your post, after that add post content. You can choose/add a relevant category in Categories widget on right sidebar and also add/choose related tags from Tags widget. When you are done, press publish button on right sidebar article will be published. A screenshot is provided below as reference for a standard article.</p>
+				<p><img alt="" src="assets/el/standard-article.png" ></p>
+				
+				<h3 id="image-article">4.2) Article with Image Post Format - <a href="#toc">top</a></h3>
+				<p>Add your article like a standard article as described in previous paragraph. After that choose <strong>Image</strong> format from <strong>Format</strong> widget in right sidebar and set an image as featured image from <strong>Featured Image</strong> widget in sidebar. As displayed in screenshot below. Publish/Update the article after you are done. </p>
+				<p>Featured Image should have a minimum <strong>width of 770px</strong>. Height is auto and will be adjusted proportional to image dimensions.</p>
+				<p><img alt="" src="assets/el/image-article.png" ></p>				
+				
+				<h3 id="video-article">4.3) Article with Video Post Format - <a href="#toc">top</a></h3>
+				<p>Add your article like a standard article as described in previous paragraph. After that choose <strong>Video</strong> format from <strong>Format</strong> widget in right sidebar and provide video embed code in <strong>Video Settings</strong> meta box. As displayed in screenshot below. Publish/Update the article after you are done. </p>
+				<p><img alt="" src="assets/el/video-article.png" ></p>				
+				
+				
+		<h2 id="faqs-settings">5) FAQs Settings - <a href="#toc">top</a></h2>	
+
+			<h3 id="new-faqs">5.1) Create FAQs Page - <a href="#toc">top</a></h3>
+			<p>To create your FAQs page go to&nbsp;<strong>Pages &gt;&gt; Add New,&nbsp;</strong>provide your page name and select&nbsp;<strong>FAQs Template&nbsp;</strong>as page template from&nbsp;<strong>Page Attributes&nbsp;</strong>meta box on right side of page editor. As, displayed in following screenshot.</p>
+			<p><img alt="new-faq" src="assets/el/faq-page.png" ></p>			
+			<hr/>
+			
+			<h3 id="new-queston">5.2) Create new Question and Answer for FAQs Page - <a href="#toc">top</a></h3>
+			<p>To create new Question and related answer form FAQs page you need to go to&nbsp;<strong>&nbsp;FAQs &gt;&gt; Add New</strong> and provide your question as title and answer as content text as displayed in image below.</p>
+			<p><img alt="new-faq" src="assets/el/new-faq.png" ></p>
+			<hr/>													
+			
+			
+			
+		<h2 id="contact-settings">6) Contact Page Settings - <a href="#toc">top</a></h2>
+		
+			<h3>Add Contact Page</h3>
+			<p>To add contact page you need to go to&nbsp;<strong>Pages &gt;&gt; Add New&nbsp;</strong>and provide the page title for example “Contact” and later on choose the&nbsp;<strong>Contact Template&nbsp;</strong>as page template from&nbsp;<strong>Page Attributes&nbsp;</strong>meta box on right side of page editor.</p>
+			<p><img alt="new-faq" src="assets/el/contact-page.png" ></p>
+			<p>Contact page text content will come from page that you created and Contact Form will be added below the contents as given in theme demo.</p>
+			<p>There is a section in Theme Options (&nbsp;<strong>“Appearance &gt;&gt; Theme Options &gt;&gt; Contact” )&nbsp;</strong>where you can change the target email address that will receive contact form messages.			</p>
+			<p><img alt="contact" src="assets/el/contact.png" ></p>
+			<hr/>
+
+			
+		<h2 id="theme-widgets">7) Theme Widgets - <a href="#toc">top</a></h2>
+				
+			
+			<h3>Support Widget</h3>
+			<p>This widget displays a title and message with support background image and colors <br>
+			<img alt="" src="assets/el/widgets/support-widget.png" ><br>
+			its front end side looks like this image below. <br>
+			<img alt="" src="assets/el/widgets/support-widget-front.png" >
+			</p>
+			
+			<h3>Quick Links Widget</h3>
+			<p>This widget displays a list of links from a chosen custom menu <br>
+			<img alt="" src="assets/el/widgets/quick-links-widget.png" ><br>
+			its front end side looks like this image below. <br>
+			<img alt="" src="assets/el/widgets/quick-links-widget-front.png" >
+			</p>
+			
+			<h3>Latest Articles Widget</h3>
+			<p>This widget displays a list of latest articles with likes count <br>
+			<img alt="" src="assets/el/widgets/latest-articles-widget.png" ><br>
+			its front end side looks like this image below. <br>
+			<img alt="" src="assets/el/widgets/latest-articles-widget-front.png" >
+			</p>
+			
+			<h3>Featured Articles Widget</h3>
+			<p>This widget displays a list of featured articles ( based on tag selected from theme options's home page settings) with likes count. <br>
+			<img alt="" src="assets/el/widgets/featured-articles-widget.png" ><br>
+			its front end side looks like this image below. <br>
+			<img alt="" src="assets/el/widgets/featured-articles-widget-front.png" >
+			</p>
+			
+			<h3>Latest Tweets Widget - For Footer</h3>
+			<p>This widget displays a list of latest tweets from twitter. <br>		                        
+			<h5>How to Get Your Twitter Consumer Keys and Access Tokens</h5>
+			<ol>
+				<li>Sign In to the <a target="_blank" href="https://dev.twitter.com/">Twitter Developers</a> section. If you do not already have an account, you can login with your normal Twitter credentials</li>
+				<li>Got to <a target="_blank" href="https://dev.twitter.com/apps">My Applications</a> page.</li>
+				<li>Click <strong>Create a New Application</strong> Button and it will take you to <a target="_blank" href="https://dev.twitter.com/apps/new">Create an Application</a> form page.</li>
+				<li>Provide your website name, description and URL, Agree with contract and provide CAPTCHA and press <strong>Create your Twitter Application</strong> button.</li>
+				<li>Details of your new twitter application will be shown along with your consumer key and consumer secret.</li>
+				<li>But, you also need to create access tokens and for that you need to click on <strong>Create my access token</strong> button.</li>
+				<li>The page will then refresh on the "Details" tab with your new access tokens. (if you are not able to view these first time, click on details tab and access tokens should appear after page refresh) You can recreate these at any time if you need to.</li>
+				<li>Now use these consumer key, consumer secret, access token and access token secret in twitter widget back end. As, displayed in screenshot provided below.</li>
+			</ol>   
+			<img alt="" src="assets/el/widgets/latest-tweets-widget.png" ><br>
+			its front end side looks like this image below. <br>
+			<img alt="" src="assets/el/widgets/latest-tweets-widget-front.png" >
+			</p>
+			
+			<h3>Flickr Photos Widget - For Footer</h3>
+			<p>This widget displays a list of Flickr Photos from specified Flickr ID as displayed in images below. <br>
+			<img alt="" src="assets/el/widgets/flicker-widget.png" ><br>
+			its front end side looks like this image below. <br>
+			<img alt="" src="assets/el/widgets/flicker-widget-front.png" >
+			</p>
+			
+			<hr/>
+
+			
+		<h2 id="theme-short-codes">8) Theme Short Codes - <a href="#toc">top</a></h2>
+		
+
+			<p>The theme comes pre-packed with a number of short codes allowing you to add styled content to your site with little effort.</p>
+									
+			<h3 id="columns">Columns</h3>
+			
+			<p>Columns short code is easy way to make columns in your page or post. All short codes related to columns and usage of these codes is mentioned below</p>
+			<p><code> [columns][/columns] <strong>You should wrap all columns in it.</strong><br>
+			[one_half][/one_half]<br>
+			[one_third][/one_third]<br>
+			[one_fourth][/one_fourth]<br>
+			[one_sixth][/one_sixth]<br>
+			[single_column][/single_column]<br>
+			</code></p>
+			<h4>Usage:</h4>
+			<p><code> [columns][one_third]<br>
+			Your Heading<br>
+			Your paragraphs and other contents<br>
+			[/one_third][/columns]</code></p>
+			<hr/>
+			
+			<h2 id="accordion">jQuery Accordion</h2>
+			<p>jQuery Accordion shortcode creates an accordion. Its usage example is given below</p>
+			<p><code> [accordion]<br>
+			[accor_block title="First Accordion Item"]Some Contents[/accor_block]<br>
+			[accor_block title="Second Accordion Item"]Some Contents[/accor_block]<br>
+			[accor_block title="Third Accordion Item"]Some Contents[/accor_block]<br>
+			[/accordion]</code></p>
+			<hr/>
+			
+			<h2 id="tabs">jQuery Tabs</h2>
+			<p>jQuery Tabs shortcode makes beautiful tabs in very simple way.</p>
+			<p><code> [tabs titles="First Tab, Second Tab, Third Tab"]<br>
+			[tab_pane] First Tab Contents [/tab_pane]<br>
+			[tab_pane] Second Tab Contents [/tab_pane]<br>
+			[tab_pane] Third Tab Contents [/tab_pane]<br>
+			[/tabs]</code></p>
+			<hr/>
+			
+			<h2 id="accordion">jQuery Toggles</h2>
+			<p>usage example is given below</p>
+			<p><code>[toggles]<br>
+			[toggle_block&nbsp;title="First Toggle Item"]Some Contents[/toggle_block]<br>
+			[toggle_block&nbsp;title="Second Toggle&nbsp;Item"]Some Contents[/toggle_block]<br>
+			[toggle_block&nbsp;title="Third Toggle&nbsp;Item"]Some Contents[/toggle_block]<br>
+			[/toggles]</code></p>
+			<hr/>
+			
+			<h2 id="messages">Message Boxes</h2>
+			<p>We have four different types of message boxes in this theme. Usage is mentioned below</p>
+			<p><code> [error]Your Error Message Here[/error]<br>
+			[success]Your Success Message Here[/success]<br>
+			[info]Your Information Message Here[/info]<br>
+			[notice]Your Notice Message Here[/notice]</code></p>
+			<hr/>
+			
+		<h2 id="bbpress-setup">9) How to use bbPress - <a href="#toc">top</a></h2>
+		<p>wpbeginner.com has a really easy to follow article to setup and use bbPress. You can read that article using <a target="_blank" href="http://www.wpbeginner.com/wp-tutorials/how-to-add-a-forum-in-wordpress-with-bbpress/">this link</a>.</p>
+		
+		<h2 id="theme-customization">10) Theme Customization - <a href="#toc">top</a></h2>
+		<p>
+			For customisation you can consider using services like 
+			<a target="_blank" href="https://codeable.io/">https://codeable.io/</a> or 
+			<a target="_blank" href="https://studio.envato.com/explore/wordpress-customization">https://studio.envato.com/explore/wordpress-customization</a> or 
+			<a target="_blank" href="http://werkpress.com/">http://werkpress.com/</a>
+		</p>
+		
+		<hr>
+		<p>Once again, Thank you very much for purchasing this Theme.</p> 
+		
+		<p class="append-bottom alt large"><a href="http://www.inspirythemes.com" target="_blank"><i>inspirythemes.com</i></a><strong></p>
+		
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+		
+</div><!-- end div .container -->
+</body>
+</html>
