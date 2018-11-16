@@ -1,4 +1,5 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
+<html lang="en">
 <head lang="en">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<title>Theme Documentation</title>
@@ -12,19 +13,17 @@
 	
 	<style type="text/css" media="screen">
 		img{max-width: 100%}
-		p, table, hr, .box { margin-bottom:25px; }
+		p, table, hr { margin-bottom:25px; }
 		.box p { margin-bottom:10px; }
 		ul li span { font: 14px "Courier New", Courier, monospace; color: #888; display: inline-block; float: right; text-align: right; }
 		.files li { overflow: hidden; border-bottom: 3px solid #fff; background-color: #f5f5f5; }
 		h4 { font-size: 16px; font-weight: bold; }
-		.tf-link-btn { display: block; margin: 5px auto; width: 300px; height: 51px; background: url(assets/images/theme-forest.png) left top no-repeat; }
-		.tf-link-btn:hover, .tf-link-btn:focus { background-position: bottom; }
 		ol.alpha li ul { padding-left: 25px; }
-		ol.alpha>li { margin-bottom: 0px; }
+		ol.alpha>li { margin-bottom: 0; }
 		ol.alpha>li>ul>li { margin-bottom: 10px; }
 		ol.alpha li a { text-decoration: none;  color: #222; font-size: 16px; font-weight: bold; margin-bottom:10px; display:inline-block;  }
 		ol.alpha li ul li { list-style: decimal; }
-		ol.alpha li ul li a { font-size: 14px; font-weight: normal; color: #333; margin-bottom:0px; }
+		ol.alpha li ul li a { font-size: 14px; font-weight: normal; color: #333; margin-bottom:0; }
 		ol.alpha li ul li ul li a { font-size: 14px; font-weight: normal; color: #444; }
 		pre { color: #666; font: 14px "Courier New", Courier, monospace; }
 		.highlight{
@@ -45,15 +44,12 @@
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	
 	<script type="text/javascript">
-		jQuery(document).ready(function(e) {
-
-			$ = jQuery;
+		jQuery(document).ready(function() {
 			
 			/*-----------------------------------------------------------------------------------*/
 			/*	Remove Width and Height Attribute of Images
 			 /*-----------------------------------------------------------------------------------*/
-			$('img').removeAttr("width height");
-						
+            jQuery('img').removeAttr("width height");
 			
 		});
 	</script>
@@ -147,7 +143,7 @@
 		<p>Welcome to Knowledge Base Theme Documentation. In start you must have a working version of WordPress already installed. For information in regard to installing the WordPress CMS, Please see the WordPress Codex&nbsp;<a href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a></p>
 		<hr/>	
 					
-		<h3 id="theme-install">2.1) Theme Installation - <a href="#toc">top</a></h2>
+		<h3 id="theme-install">2.1) Theme Installation - <a href="#toc">top</a></h3>
 			<div class="highlight"><strong>Please make sure to unzip the package that you downloaded from themeforest, Before uploading it to your WordPress installation as a theme.</strong> Because, it is not only a theme and contain many other related files &amp; folders like Documentation, Import XML, Theme Files and Theme Zip</div>
 			<p>When you are ready to install this theme, you must first upload the theme files and then activate the theme itself. The theme files can be uploaded in two ways:</p>
 			
@@ -180,7 +176,7 @@
 
 		<hr/>
 
-		<h3 id="quick-setup">2.3) Manual Setup - <a href="#toc">top</a></h3>
+		<h3 id="manual-setup">2.3) Manual Setup - <a href="#toc">top</a></h3>
 				
 			<h3>Step 1: - <a href="#toc">top</a></h3>
 				<p>Look for <strong>Import XML</strong> folder in unzipped package downloaded from themeforest.net and  use the XML within it.&nbsp;Go to the <strong>WordPress Admin &gt;&gt; Tools &gt;&gt; Import &gt;&gt; WordPress</strong>&nbsp;( at 1st time you need to install&nbsp;WordPress&nbsp;import plugin). After that, Import the XML file and be sure to include everything, including attachments. After that’s done, you will have a bunch of posts, pages and other related contents.</p>
@@ -199,11 +195,11 @@
 				<hr/>
 			<h3>Step 5: - <a href="#toc">top</a></h3>
 				<p>Go to&nbsp;<b>Appearance &gt;&gt; Customizer &gt;&gt; Home Page&nbsp;</b>and configure the settings as displayed in image below.</p>
-				<p><img alt="to-home" src="assets/el/to-home.png" ></a></p>
+				<p><img alt="to-home" src="assets/el/to-home.png" ></p>
 				<hr/>
 			<h3>Step 6: - <a href="#toc">top</a></h3>
 				<p>Go to&nbsp;<b>Appearance &gt;&gt; Widgets&nbsp;</b>and configure widgets in Home Sidebar as displayed in following screenshot.</p>
-				<p><img alt="to-home" src="assets/el/home-widgets.png" ></a></p>
+				<p><img alt="to-home" src="assets/el/home-widgets.png" ></p>
 				<p><strong>Your Home Page’s basic settings are done now. you can further customize things according to your requirements.</strong></p>
 				<hr/>
 		
@@ -304,14 +300,14 @@
 			</p>
 			
 			<h3>Latest Tweets Widget - For Footer</h3>
-			<p>This widget displays a list of latest tweets from twitter. <br>
+			<p>This widget displays a list of latest tweets from twitter. </p><br>
 			<p>You can use your username or Widget ID to display tweets.</p>
 			<img alt="" src="assets/el/widgets/latest-tweets-widget.png" ><br>
 			its front end side looks like this image below. <br>
 			<img alt="" src="assets/el/widgets/latest-tweets-widget-front.png" >
-			</p>
+
 			
-			<h3>Flickr Photos Widget - For Footer</h3>
+			<h3>Flicker Photos Widget - For Footer</h3>
 			<p>This widget displays a list of Flickr Photos from specified Flickr ID as displayed in images below. <br>
 			<img alt="" src="assets/el/widgets/flicker-widget.png" ><br>
 			its front end side looks like this image below. <br>
@@ -361,7 +357,7 @@
 			[/tabs]</code></p>
 			<hr/>
 			
-			<h2 id="accordion">jQuery Toggles</h2>
+			<h2 id="toggles">jQuery Toggles</h2>
 			<p>usage example is given below</p>
 			<p><code>[toggles]<br>
 			[toggle_block&nbsp;title="First Toggle Item"]Some Contents[/toggle_block]<br>
@@ -392,7 +388,7 @@
 		<hr>
 		<p>Once again, Thank you very much for purchasing this Theme.</p> 
 		
-		<p class="append-bottom alt large"><a href="http://www.inspirythemes.com" target="_blank"><i>inspirythemes.com</i></a><strong></p>
+		<p class="append-bottom alt large"><strong><a href="http://www.inspirythemes.com" target="_blank"><i>inspirythemes.com</i></a></strong></p>
 		
 		<p><a href="#toc">Go To Table of Contents</a></p>
 		
