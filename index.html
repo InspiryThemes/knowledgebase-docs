@@ -147,19 +147,36 @@
 			<div class="highlight"><strong>Please make sure to unzip the package that you downloaded from themeforest, Before uploading it to your WordPress installation as a theme.</strong> Because, it is not only a theme and contain many other related files &amp; folders like Documentation, Import XML, Theme Files and Theme Zip</div>
 			<p>When you are ready to install this theme, you must first upload the theme files and then activate the theme itself. The theme files can be uploaded in two ways:</p>
 			
-			<p><strong>FTP Upload:</strong>&nbsp;Using your FTP client, upload the non-zipped theme folder into the /wp-content/themes/ folder on your server.</p>
-			
-			<p style="text-align:center"><strong>OR</strong></p>
-			
-			<p><strong>WordPress Upload:</strong>&nbsp;Navigate to&nbsp;<strong>Appearance &gt; Themes &gt; Add New &gt; Upload Theme</strong>. Go to "Browse/Choose File", and select the zipped theme file named <strong>inspiry-knowledgebase.zip</strong>. Hit “Install Now” and the theme will be uploaded and installed.</p>
-			
+			<p><strong>WordPress Upload:</strong>&nbsp;Navigate to&nbsp;<strong>Appearance &gt; Themes &gt; Add New &gt; Upload Theme</strong>. </p>
+		<img src="assets/el/new-theme.png" alt="New Theme Via WordPress Dashboard"><br><br>
+		<p> Go to "Browse/Choose File", and select the zipped theme file named <strong>inspiry-knowledgebase.zip</strong>. Hit “Install Now” and the theme will be uploaded and installed.</p>
+		<br>
+		<img src="assets/el/install-theme.png" alt="Installation Via WordPress Dashboard"><br><br>
 			<p>Once the theme is uploaded, you need to activate it. Go to <strong>Appearance &gt; Themes</strong> and activate the uploaded theme.</p>
-			
+		<img src="assets/el/active-theme.png" alt="Installation Via WordPress Dashboard"><br><br>
+		<p>A notice will be displayed right after the activation of the theme asking you to install and activate the required plugins. So, go ahead and click on Begin installing plugins.</p>
+		<img src="assets/el/plugin-notice.png" alt="WordPress Plugin Notice"><br><br>
+		<p>On next page you will see the list of plugins to install. Select all the plugins and click on Install and then click on Apply to install all of them at once (as shown in the screenshot below). </p>
+		<img src="assets/el/install-plugin.png" alt="WordPress Plugin Install"><br><br>
+		<p>After all the plugins are installed click on Return to Required Plugins Installer.</p>
+		<img src="assets/el/return-plugin.png" alt="WordPress Plugin Return Screen"><br><br>
+		<p>Once again select all the plugins and click on Activate and then click on Apply to activate all the plugins and you are done.</p>
+		<img src="assets/el/activate-plugin.png" alt="WordPress Plugin Activate Screen"><br><br>
 			<p><strong>Note:</strong> The Theme zip name is <strong>inspiry-knowledgebase.zip</strong>. which you will find in the downloaded package from themeforest.</p>
 
-			<h4>Install Child Theme</h4>
-		<p>It is better to use child theme and if you need to modify anything you modify in child theme only. This way you can easily update your parent theme when new update becomes available on themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
+			<h4>Install Child Theme ( Highly Recommended )</h4>
+		<p>It is highly recommended to use child theme, So that you can easily update parent theme whenever a new update becomes available. A pre-built ready to use child theme is included in the main theme pack that you have downloaded from themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
 			<p>To install child theme for this theme, you need to upload the <strong>inspiry-knowledgebase-child.zip</strong> and activate it the same way you uploaded <strong>inspiry-knowledgebase.zip</strong> as guided above.</p>
+		<p style="text-align:center"><strong>OR</strong></p>
+
+		<p><strong>FTP Upload:</strong>&nbsp;Using your FTP client, upload the non-zipped theme folder into the /wp-content/themes/ folder on your server.</p>
+		<ol>
+			<li>Access your hosting server using an ftp client like <strong>FileZilla</strong></li>
+			<li>Go to the '<strong>wp-content >> themes</strong>' folder of your WordPress installation</li>
+			<li>Extract the <strong>inspiry-knowledgebase.zip</strong> file and put the inspiry-knowledgebase folder in '<strong>wp-content >> themes</strong>' folder</li>
+			<li>Go to '<strong>Dashboard >> Appearance >> Themes</strong>' section to activate the theme</li>
+			<li>After activation go to "<strong>Dashboard >> Appearance >> Customize</strong>" to play with theme's settings.</li>
+		</ol>
 
 			<h4>Translating Theme to Your language</h4>
 			<p>If you want to translate the theme to your language then read the following article on our support site. <a href="http://support.inspirythemes.com/knowledgebase/how-to-translate-your-theme-to-your-language/" target="_blank">How to translate your theme to your language</a></p>
@@ -169,35 +186,47 @@
 			<p>
 				<strong>Step 1:</strong> <br/>
 				Go to <strong>Appearance >> Import Demo Data</strong> and press the <strong>"Import Demo Data"</strong> button and wait as it will take few minutes to import demo data and related images from remote server. <br/><br/>
-
-				<strong>Step 3:</strong> <br/>
+		        <img alt="Demo" src="assets/el/demo.png" >
+				<strong>Step 2:</strong> <br/>
 				Visit your site. Your basic theme installation is complete. <br/><br/>
 			</p>
 
 		<hr/>
 
 		<h3 id="manual-setup">2.3) Manual Setup - <a href="#toc">top</a></h3>
+
+		<h3>Step 1: - <a href="#toc">top</a></h3>
+		<p>Go to Dashboard >> Settings >> Permalinks and choose Post name from Common Settings and save the changes, As displayed in screen shot below.</p>
+		<p><img alt="Permalinks" src="assets/el/permalinks.png" ></p>
+
+		<h3>Step 2: - <a href="#toc">top</a></h3>
+		<p>Go to Dashboard >> Tools >> Import and click Install Now shown under WordPress as displayed in image below.</p>
+		<p><img alt="Import Plugin" src="assets/el/import-plugin.png" ></p>
+
+		<h3>Step 3: - <a href="#toc">top</a></h3>
+		<p>Once installed, you can activate the plugin and run it by clicking on Run Importer.</p>
+		<p><img alt="Import Run" src="assets/el/import-run.png" ></p>
 				
-			<h3>Step 1: - <a href="#toc">top</a></h3>
+			<h3>Step 4: - <a href="#toc">top</a></h3>
 				<p>Look for <strong>Import XML</strong> folder in unzipped package downloaded from themeforest.net and  use the XML within it.&nbsp;Go to the <strong>WordPress Admin &gt;&gt; Tools &gt;&gt; Import &gt;&gt; WordPress</strong>&nbsp;( at 1st time you need to install&nbsp;WordPress&nbsp;import plugin). After that, Import the XML file and be sure to include everything, including attachments. After that’s done, you will have a bunch of posts, pages and other related contents.</p>
 				<hr/>
-			<h3>Step 2: - <a href="#toc">top</a></h3>
+			<h3>Step 5: - <a href="#toc">top</a></h3>
 				<p>Go to <strong>Appearance &gt;&gt; Menus</strong>. You will find three&nbsp;menus&nbsp;already created. Arrange and Assign them as displayed in image below.</p>
 				<p><img alt="menu" src="assets/el/menu.png" ></p>
 				<hr/>
-			<h3>Step 3: - <a href="#toc">top</a></h3>
+			<h3>Step 6: - <a href="#toc">top</a></h3>
 				<p>Go to&nbsp;<strong>Settings &gt;&gt; Reading&nbsp;</strong>and assign&nbsp;<strong>Home</strong> page as Front Page and&nbsp;<strong>Articles List</strong> page as posts page. As displayed in image below.</p>
 				<p><img alt="home blog" src="assets/el/home-blog.png" ></p>
 				<hr/>
-			<h3>Step 4: - <a href="#toc">top</a></h3>
+			<h3>Step 7: - <a href="#toc">top</a></h3>
 				<p>Go to <b>Appearance &gt;&gt; Customizer &gt;&gt; Site Identity</b> and upload your logo and favicon as displayed in image below.</p>
 				<p><img alt="theme-options" src="assets/el/theme-options.png" ></p>
 				<hr/>
-			<h3>Step 5: - <a href="#toc">top</a></h3>
+			<h3>Step 8: - <a href="#toc">top</a></h3>
 				<p>Go to&nbsp;<b>Appearance &gt;&gt; Customizer &gt;&gt; Home Page&nbsp;</b>and configure the settings as displayed in image below.</p>
 				<p><img alt="to-home" src="assets/el/to-home.png" ></p>
 				<hr/>
-			<h3>Step 6: - <a href="#toc">top</a></h3>
+			<h3>Step 9: - <a href="#toc">top</a></h3>
 				<p>Go to&nbsp;<b>Appearance &gt;&gt; Widgets&nbsp;</b>and configure widgets in Home Sidebar as displayed in following screenshot.</p>
 				<p><img alt="to-home" src="assets/el/home-widgets.png" ></p>
 				<p><strong>Your Home Page’s basic settings are done now. you can further customize things according to your requirements.</strong></p>
